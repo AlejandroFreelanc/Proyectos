@@ -1,0 +1,109 @@
+/* Custom Propeties*/
+:root {
+ --first-alpha-color: rgba(5, 163, 31, 0.466);
+ --black-color: rgb(0, 0, 0);
+ --link-color: rgb(80, 158, 227);
+ --text-color: rgb(209, 196, 110);
+ --black-alpha-color: rgba(0, 0, 0, 0.5);
+ --whithe-color: rgb(255, 255, 255);
+}
+
+/* Reset Styles*/
+body {
+ font-family: 'Raleway', sans-serif;
+}
+
+a:hover {
+ color: var(--black-color);
+
+}
+
+a {
+ color: var(--text-color);
+ transition: all 0.3s ease-out;
+}
+
+
+
+/* Bootstrap Styles*/
+.bg-dark {
+ background-color: var(--bs-black) !important;
+}
+
+.navbar-dark {
+ --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%285, 163, 31, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler:hover {
+ --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28209, 196, 110, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+ opacity: 0.75;
+}
+
+.nav-item {
+ padding-left: .5rem;
+ transition: all 0.3s ease-out;
+}
+
+.nav-item:hover {
+ background-color: var(--first-alpha-color);
+}
+
+.nav-link {
+ color: var(--first-alpha-color);
+ font-size: 1rem;
+ font-weight: bold;
+}
+
+.nav-link:hover {
+ color: var(--text-color);
+}
+
+/* My Styles*/
+
+.container-size {
+ width: 200px;
+ height: auto;
+}
+
+.btn-success:hover {
+ color: var(--text-color);
+}
+
+.bg-gradient-green-yellow {
+ background: rgb(253, 187, 45);
+ background: linear-gradient(281deg, rgba(253, 187, 45, 0.5242471988795518) 0%, rgba(34, 195, 136, 1) 100%);
+}
+
+.box-shadow-1 {
+ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0.25);
+}
+
+.gradient-text {
+ background-image: linear-gradient(281deg, rgba(215, 218, 193, 1) 14%, rgba(80, 191, 158, 1) 28%, rgba(41, 177, 93, 1) 46%, rgba(5, 163, 31, 0.7175245098039216) 63%);
+ -ms-background-clip: text;
+ -moz-background-clip: text;
+ -webkit-background-clip: text;
+ background-clip: text;
+ -ms-text-fill-color: transparent;
+ -moz-text-fill-color: transparent;
+ -webkit-text-fill-color: transparent
+}
+
+/****HeroImages*****/
+.bg-hero-image {
+ background-image: url(/ProTodosLosDias/Assets/Hero-Image.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ background-attachment: var(--hero-attachment);
+}
+
+.hero-image-opacity {
+ width: 100%;
+ min-height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ background-color: var(--hero-opacity-color);
+}
