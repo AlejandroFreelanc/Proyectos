@@ -91,7 +91,11 @@ a {
 
 /****HeroImages*****/
 .bg-hero-image {
+<<<<<<< HEAD
  background-image: url(/ProTodosLosDias/Assets/Hero-Image.jpg);
+=======
+ background-image: url(/Assets/Hero-Image.jpg);
+>>>>>>> db22ba57c974418daf49891fd1bde8838629ecf8
  background-repeat: no-repeat;
  background-position: center;
  background-size: cover;
